@@ -17,8 +17,49 @@ table, tr, td{
 
 </style>
 <script>
+  function showTable(){
+    document.write(<table id="example" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tfoot>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>$320,800</td>
+            </tr>
+            <tr>
+                <td>Garrett Winters</td>
+                <td>Accountant</td>
+                <td>$170,750</td>
+            </tr>
+            <tr>
+                <td>Ashton Cox</td>
+                <td>Junior Technical Author</td>
+                <td>$86,000</td>
+            </tr>
+            <tr>
+                <td>Cedric Kelly</td>
+                <td>Senior Javascript Developer</td>
+                <td>$433,060</td>
+            </tr>
+            <tr>
+                <td>Airi Satou</td>
+                <td>Accountant</td>
+                <td>$162,700</td>
+            </tr>
 
-<!-- JavaScript goes here -->
+        </tbody>
+    </table>
+    )
+}
+
 
 
 
@@ -33,8 +74,8 @@ good idea to save the lines of code you write during the exercises for later use
 <h2>Exercise 1</h2>
 <p>&nbsp;Below you will see three buttons. Edit the source code and add an onClick-events to these buttons.</p>
 <p>
-  <button>Button 1</button>
-  <button>Button 2</button>
+  <button onclick="alert('You clicked me!')">Button 1</button>
+  <button onclick="showTable()">Button 2</button>
   <button>Button 3</button>
 </p>
 
@@ -54,7 +95,7 @@ var html = `
   </h1>
 `;
 </xmp>
-
+<p>function showTable()</p>
 <br>
 
 <table id="example" class="display" cellspacing="0" width="100%">
@@ -111,7 +152,7 @@ var persons = ["Nyssa P. Skinner", "593-4241 Lacus, St.","Cape Verde",
 </xmp>
 </ul>
 
-<h2>Exercise 2</h2>
+<h2 onmouseover="console.log('Stepped over my a mouse!')" onmouseout="console.log('Stepped over my a mouse!')">Exercise 2</h2>
 
 <ul>
   <li>Add an&nbsp;onMouseOver event on the&nbsp;Heading "Exercise 2" of this page.&nbsp;It should&nbsp;fire when the users mouse is moved
